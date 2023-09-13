@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Driving School Booking</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+	<div class="container">
+        <h2>Driving School Booking</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option value="basic">Basic Driving Course</option>
+                <option value="advanced">Advanced Driving Course</option>
+                <option value="intensive">Intensive Driving Course</option>
+            </select>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
